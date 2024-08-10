@@ -13,96 +13,29 @@
   <link rel="stylesheet" href="../assets/css/libraries.css" />
   <link rel="stylesheet" href="../assets/css/style.css" />
   <style>
-    /* General Styles */
-    body {
-      background-color: white;
-    }
+   .scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
 
-    /* Button Styles */
-    .btn {
-      font-size: 18px;
-      border: none;
-    }
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
 
-    .btn-primary:hover {
-      background-color: #121c45;
-    }
-
-    .btn-primary {
-      background-color: #fe5e15;
-    }
-
-    /* Product Container and Panels */
-    .contact-panel {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 10px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-    
-
-    .product:hover .contact-panel {
-      transform: scale(1.05);
-    }
-
-    .contact__panel-header {
-      margin-bottom: 10px;
-    }
-
-    .contact__panel-icon1 img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* Responsive Grid */
-    @media (min-width: 768px) {
-      .product {
-        flex: 0 0 25%;
-        max-width: 25%;
-      }
-
-      .service__title {
-        font-size: 1vw;
-      }
-    }
-
-    .service__title{
-        background-color: #fe5e15;
-        padding: 20px;
-        margin: 0;
-        border-radius: 6px;
-        color: white;
-    }
-
-    @media (max-width: 1080.98px) {
-      .service__title {
-        font-size: 1.5vw;
-      }
-    }
-
-    @media (max-width: 767.98px) {
-      .product {
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-
-      .service__title {
-        font-size: 3vw;
-      }
-    }
-
-    /* Initially hide fresh and dehydrated products */
-    .fresh,
-    .dehydrated {
-      display: none;
-    }
+/* Hide scrollbar for IE, Edge, and Firefox */
+.scroll-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
   </style>
 </head>
 
 <body>
   <div class="wrapper">
-    <!-- Header -->
+    <!-- =========================
+        Header
+    =========================== -->
     <header id="header" class="header header-transparent">
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
@@ -122,19 +55,19 @@
                 <a href="#products" style="color: black;" class="nav__item-link">Products</a>
               </li>
               <li class="nav__item">
-                <a href="#services" style="color: black;" class="nav__item-link">Services</a>
-              </li>
+                <a href="#services" style="color: black;" class=" nav__item-link">Services</a>
+              </li><!-- /.nav-item -->
               <li class="nav__item">
                 <a href="#about" style="color: black;" class="nav__item-link">About</a>
-              </li>
+              </li><!-- /.nav-item -->
               <li class="nav__item">
                 <a href="#awards" style="color: black;" class="nav__item-link">Awards</a>
-              </li>
+              </li><!-- /.nav-item -->
               <li class="nav__item">
                 <a href="#team" style="color: black;" class="nav__item-link">Team</a>
-              </li>
-            </ul>
-          </div>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.navbar-nav -->
+          </div><!-- /.navbar-collapse -->
           <div class="navbar-modules">
             <ul class="modules__wrapper d-flex align-items-center list-unstyled">
               <li class="d-none d-lg-block">
@@ -142,95 +75,121 @@
                   <span>Contact us</span><i class="icon-arrow-right"></i>
                 </a>
               </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+            </ul><!-- /.modules-wrapper -->
+          </div><!-- /.navbar-modules -->
+        </div><!-- /.container -->
+      </nav><!-- /.navabr -->
+    </header><!-- /.Header -->
 
-    <!-- Products Section -->
-    <section id="products" class="contact contact-2 text-center p-5">
+    <section id="about" class="about about-2" style="padding-top: 0;padding-bottom: 50px;">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center mb-50">
-              <span class="heading__subtitle heading__title">All Products</span>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row justify-content-center pb-3">
-            <div class="col-auto">
-              <button id="allBtn" class="btn btn-primary">All</button>
-            </div>
-            <div class="col-auto">
-              <button id="freshBtn" class="btn btn-secondary">Fresh</button>
-            </div>
-            <div class="col-auto">
-              <button id="dehydratedBtn" class="btn btn-secondary">Dehydrated</button>
-            </div>
-          </div>
+          <div class="col-sm-12 col-md-9 col-lg-12">
+            <div class="">
+              <img src="assets/images/about/1.jpg" width="10000vh" height="300vw" alt="about img" class="">
+              <!-- <div class="counter-item-wrapper counters-white">
+                <div class="counter-item">
+                  <div class="counter__icon">
+                    <i class="icon-box"></i>
+                  </div>
+                  <h4><span class="counter">100</span></h4>
+                  <p class="counter__desc">Delivered Goods</p>
+                </div>
+              </div>/.counter-item-wrapper -->
+            </div><!-- /.about-img -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="heading heading-3 mb-20 pt-3">
+              <!-- <span class="heading__subtitle">About Us</span> -->
+              <h2 class="heading__title" style="color: #fe5e15;">Product Title</h2>
+              <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, adipisci. Impedit eius distinctio cupiditate modi sint accusamus amet quisquam non labore minus, minima earum odio nulla iusto reprehenderit? Id nihil aspernatur, aperiam molestiae nesciunt et, ea, voluptatem corporis soluta repellat quo? Beatae in esse porro cumque. Ipsam voluptas distinctio laborum illum ad odit, velit ab? Optio inventore sunt ipsam eveniet! Dolorum laudantium, ad atque repellendus, et, dicta placeat eaque beatae quod cupiditate porro repellat itaque quae! Perferendis vero eveniet cum iure earum! Qui nam autem in, accusantium rem cumque quod doloremque facilis distinctio excepturi iure eius consequuntur explicabo! Libero quae aspernatur inventore deleniti voluptas dolorem adipisci amet, cupiditate et hic placeat saepe minima, suscipit eligendi id cumque quibusdam porro. Ab dolore, nihil beatae porro, est blanditiis qui expedita nam voluptate sit assumenda earum nemo, officiis eius hic natus maxime animi. Suscipit, repudiandae praesentium ipsa nesciunt distinctio officiis! Nulla, cumque esse.</p> -->
+            </div><!-- /.heading -->
+            <!-- <ul class="list-items list-items-layout2 list-unstyled mb-30">
+              <li>Points</li>
+              <li>Points</li>
 
-          <div id="productContainer" class="row justify-content-start">
-            <!-- Fresh Products -->
-            <div class="col-sm-6 col-md-3 p-3 product fresh">
-              <a href="/product.html">
-                <div class="contact-panel">
-                  <div class="contact__panel-header">
-                    <div class="contact__panel-icon1">
-                      <img height="204px" src="assets/images/products/green.png" alt="Green Chilli">
-                    </div>
-                </div>
-                <h4 class="service__title p-2 m-0" style="background-color: #fe5e15;">Green Chilli <i class="icon-arrow-right"></i></h4>
-                </div>
-              </a>
-            </div>
+            </ul> -->
+            <!-- <a href="#" class="btn btn__primary mr-30 mb-20">More About Us</a>
+            <a href="#" class="btn btn__secondary btn__link btn__underlined mb-20">Find your solution</a> -->
+          </div><!-- /.col-lg-6 -->
+          <div class="col-sm-12 col-md-12 col-lg-12 ">
+            <div class="heading heading-3 mb-20">
+              <!-- <span class="heading__subtitle">About Us</span> -->
+              <!-- <h2 class="heading__title" style="color: #fe5e15;">Product Title</h2> -->
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus reiciendis doloremque ipsum fugit autem iure est assumenda eveniet expedita necessitatibus dolorem maxime sapiente, tempora ex ipsam, exercitationem velit officia ducimus ad et iste suscipit consectetur. Voluptatum aliquid reprehenderit, ducimus consectetur cum doloremque minus doloribus expedita omnis nostrum voluptate possimus quam.</p>
+            </div><!-- /.heading -->
+            <ul class="list-items list-items-layout2 list-unstyled mb-30">
+              <li>Points</li>
+              <li>Points</li>
 
-            <div class="col-sm-6 col-md-3 p-3 product fresh">
-              <a href="/product.html">
-                <div class="contact-panel">
-                  <div class="contact__panel-header">
-                    <div class="contact__panel-icon1">
-                      <img height="204px" src="assets/images/products/raw.png" alt="Raw Bananas">
-                    </div>
-                </div>
-                <h4 class="service__title p-2 m-0">Bananas <i class="icon-arrow-right"></i></h4>
-                </div>
-              </a>
-            </div>
-
-            <!-- Dehydrated Products -->
-            <div class="col-sm-6 col-md-3 p-3 product dehydrated">
-              <a href="/product.html">
-                <div class="contact-panel">
-                  <div class="contact__panel-header">
-                    <div class="contact__panel-icon1">
-                      <img height="204px" src="assets/images/products/chilli.png" alt="Dehydrated Chilli">
-                    </div>
-                </div>
-                <h4 class="service__title p-2 m-0">Dry Chilli <i class="icon-arrow-right"></i></h4>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-md-3 p-3 product dehydrated">
-              <a href="/product.html">
-                <div class="contact-panel">
-                  <div class="contact__panel-header">
-                    <div class="contact__panel-icon1">
-                      <img height="204px" src="assets/images/products/tomatos.png" alt="Dehydrated Tomatos">
-                    </div>
-                </div>
-                <h4 class="service__title p-2 m-0">Dry Tomatos <i class="icon-arrow-right"></i></h4>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+            </ul>
+            <!-- <a href="#" class="btn btn__primary mr-30 mb-20">More About Us</a>
+            <a href="#" class="btn btn__secondary btn__link btn__underlined mb-20">Find your solution</a> -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
     </section>
+    <!-- ========================
+            Footer
+    ========================== -->
 
-    <!-- Footer -->
+    <section id="about" class="about about-2" style="padding-top: 0;padding-bottom: 50px;">
+        <div class="container">
+            <table class="table table-striped">
+                <thead style="color:white; background-color: #ff9f72;" >
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col" colspan="2"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col">1</th>
+                        <th scope="col" colspan="2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, nisi!</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">2</th>
+                        <th scope="col" colspan="2">Lorem, ipsum dolor.</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col" colspan="2">Lorem ipsum dolor sit.</th>
+                    </tr>
+                </tbody>
+              </table>
+        </div><!-- /.container -->
+      </section>
+    
+
+
+    <section id="about" class="about about-2" style="padding-top: 0;padding-bottom: 50px;">
+        <div class="container">
+            <table class="table table-striped">
+                <thead style="color:white; background-color: #ff9f72;" >
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col" colspan="2"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col">1</th>
+                        <th scope="col" colspan="2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, nisi!</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">2</th>
+                        <th scope="col" colspan="2">Lorem, ipsum dolor.</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col" colspan="2">Lorem ipsum dolor sit.</th>
+                    </tr>
+                </tbody>
+              </table>
+        </div><!-- /.container -->
+      </section>
+    
+    
     <footer id="footer" class="footer">
       <div class="footer-newsletter">
         <div class="container">
@@ -239,27 +198,26 @@
               <div class="footer__newsletter-text">
                 <h6>Our Newsletter</h6>
                 <p>Sign up for industry news & insights.</p>
-              </div>
-            </div>
+              </div><!-- /.footer-newsletter-text -->
+            </div><!-- /.col-xl-3-->
             <div class="col-sm-12 col-md-12 col-lg-9 col-xl-7">
-              <form class="footer__newsletter-form d-flex flex-wrap"
-                action="https://docs.google.com/forms/d/e/1FAIpQLScGAtO2eNE2M3dmAlstJTcE7HMURPIXzPzjb5TA6ai7PO_Dfw/formResponse">
+              <form class="footer__newsletter-form d-flex flex-wrap" action="https://docs.google.com/forms/d/e/1FAIpQLScGAtO2eNE2M3dmAlstJTcE7HMURPIXzPzjb5TA6ai7PO_Dfw/formResponse">
                 <div class="form-group d-flex flex-1 mb-20 mr-1">
                   <input type="text" class="form-control" placeholder="Your Name" name="entry.1571783857">
                   <input type="email" class="form-control" placeholder="Your Email Address" name="entry.521402133">
                 </div>
                 <button class="btn btn__primary btn__hover3 mb-20" type="submit">Submit Now!</button>
               </form>
-            </div>
+            </div><!-- /.col-xl-7 -->
             <div class="col-sm-12 col-md-12 col-lg-3 col-xl-2">
               <div class="social__icons justify-content-end">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
+              </div><!-- /.social-icons -->
+            </div><!-- /.col-xl-2 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
       </div>
       <div class="footer-top">
         <div class="container">
@@ -267,14 +225,13 @@
             <div class="col-sm-12 col-md-12 col-lg-4 footer__widget footer__widget-about">
               <div class="footer__widget-content">
                 <img src="assets/images/logo/logo-small.png" alt="logo" class="footer-logo">
-                <p>Our global expertise, advanced supply chain technology, and customized solutions will help you develop
-                  and implement successful supply strategies.</p>
+                <p>Our global expertise, advanced supply chain technology, and customized solutions will help you develop and implement successful supply strategies.</p>
                 <ul class="contact__list list-unstyled">
                   <li><span>Email:</span><span>info@BalaTradeElite.com</span></li>
                   <li><span>Phone:</span><span>+917893533766</span></li>
                 </ul>
               </div>
-            </div>
+            </div><!-- /.col-lg-4 -->
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
               <h6 class="footer__widget-title">Who We Are</h6>
               <div class="footer__widget-content">
@@ -287,8 +244,8 @@
                     <li><a href="#awards">Awards</a></li>
                   </ul>
                 </nav>
-              </div>
-            </div>
+              </div><!-- /.footer-widget-content -->
+            </div><!-- /.col-lg-2 -->
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
               <h6 class="footer__widget-title">What We Do</h6>
               <div class="footer__widget-content">
@@ -302,8 +259,8 @@
                     <li><a href="#services">Packaging</a></li>
                   </ul>
                 </nav>
-              </div>
-            </div>
+              </div><!-- /.footer-widget-content -->
+            </div><!-- /.col-lg-2 -->
             <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
               <h6 class="footer__widget-title">Who We Serve</h6>
               <div class="footer__widget-content">
@@ -317,25 +274,25 @@
                     <li><a href="#">Oil & Gas</a></li>
                   </ul>
                 </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </div><!-- /.footer-widget-content -->
+            </div><!-- /.col-lg-2 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.footer-top -->
       <div class="footer-bottom">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-sm-12 col-md-6 col-lg-6">
               <div class="footer__copyright">
                 <span>&copy; 2024 InboxTales</span>
-              </div>
-            </div>
+              </div><!-- /.Footer-copyright -->
+            </div><!-- /.col-lg-6 -->
             <div class="col-sm-12 col-md-6 col-lg-6">
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.Footer-bottom -->
+    </footer><!-- /.Footer -->
 
     <div class="module__search-container">
       <i class="fa fa-times close-search"></i>
@@ -343,74 +300,14 @@
         <input type="text" class="search__input" placeholder="Type Words Then Enter">
         <button class="module__search-btn"><i class="fa fa-search"></i></button>
       </form>
-    </div>
+    </div><!-- /.module-search-container -->
 
     <button id="scrollTopBtn"><i class="fa fa-long-arrow-up"></i></button>
-  </div>
+  </div><!-- /.wrapper -->
 
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    document.getElementById('allBtn').addEventListener('click', function () {
-      toggleProducts('all');
-      this.classList.add('btn-primary');
-      this.classList.remove('btn-secondary');
-      document.getElementById('freshBtn').classList.remove('btn-primary');
-      document.getElementById('freshBtn').classList.add('btn-secondary');
-      document.getElementById('dehydratedBtn').classList.remove('btn-primary');
-      document.getElementById('dehydratedBtn').classList.add('btn-secondary');
-    });
-
-    document.getElementById('freshBtn').addEventListener('click', function () {
-      toggleProducts('fresh');
-      this.classList.add('btn-primary');
-      this.classList.remove('btn-secondary');
-      document.getElementById('allBtn').classList.remove('btn-primary');
-      document.getElementById('allBtn').classList.add('btn-secondary');
-      document.getElementById('dehydratedBtn').classList.remove('btn-primary');
-      document.getElementById('dehydratedBtn').classList.add('btn-secondary');
-    });
-
-    document.getElementById('dehydratedBtn').addEventListener('click', function () {
-      toggleProducts('dehydrated');
-      this.classList.add('btn-primary');
-      this.classList.remove('btn-secondary');
-      document.getElementById('allBtn').classList.remove('btn-primary');
-      document.getElementById('allBtn').classList.add('btn-secondary');
-      document.getElementById('freshBtn').classList.remove('btn-primary');
-      document.getElementById('freshBtn').classList.add('btn-secondary');
-    });
-
-    function toggleProducts(type) {
-      let allProducts = document.querySelectorAll('.product');
-      let freshProducts = document.querySelectorAll('.fresh');
-      let dehydratedProducts = document.querySelectorAll('.dehydrated');
-
-      if (type === 'all') {
-        allProducts.forEach(function (product) {
-          product.style.display = 'block';
-        });
-      } else if (type === 'fresh') {
-        freshProducts.forEach(function (product) {
-          product.style.display = 'block';
-        });
-        dehydratedProducts.forEach(function (product) {
-          product.style.display = 'none';
-        });
-      } else {
-        freshProducts.forEach(function (product) {
-          product.style.display = 'none';
-        });
-        dehydratedProducts.forEach(function (product) {
-          product.style.display = 'block';
-        });
-      }
-    }
-
-    // Initialize to show all products by default
-    toggleProducts('all');
-  </script>
 </body>
 
 </html>
