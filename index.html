@@ -25,7 +25,9 @@ body {
   font-size: 18px;
   border: none;
 }
-
+.btn-primary:hover{
+  background-color: #121c45;
+}
 .btn-primary{
   background-color: #fe5e15;
 }
@@ -36,6 +38,10 @@ body {
   border-radius: 8px;
   padding: 10px;
   text-align: center;
+}
+
+.product:hover{
+  scale: 1.1;
 }
 
 .contact__panel-header {
@@ -102,7 +108,7 @@ body {
                 <a href="/" class="nav__item-link">Home</a>
               </li>
               <li class="nav__item">
-                <a href="#products" class="nav__item-link">Products</a>
+                <a href="products.html" class="nav__item-link">Products</a>
               </li>
               <li class="nav__item">
                 <a href="#services" class=" nav__item-link">Services</a>
@@ -145,8 +151,7 @@ body {
                 <div class="slide__content">
                   <h2 class="slide__title">Connecting Indian Farmers with Global Markets</h2>
                   <p class="slide__desc">Break Barriers, Build Bridges</p>
-                  <a href="#services" class="btn btn__primary btn__hover2 mr-30">Our Services</a>
-                  <a href="#about" class="btn btn__white">About Us</a>
+                  <a href="#contact" class="btn btn__white">Contact Us</a>
                 </div><!-- /.slide-content -->
               </div><!-- /.col-lg-8 -->
             </div><!-- /.row -->
@@ -202,9 +207,9 @@ body {
           </div>
         </div>
         <div class="container">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center pb-3">
             <div class="col-auto">
-              <button id="hydratedBtn" class="btn btn-primary">Hydrated</button>
+              <button id="hydratedBtn" class="btn btn-primary">Fresh</button>
             </div>
             <div class="col-auto">
               <button id="dehydratedBtn" class="btn btn-secondary">Dehydrated</button>
@@ -220,7 +225,7 @@ body {
                     <div class="contact__panel-icon1">
                       <img height="204px" src="assets/images/products/green.png" alt="Green Chilli">
                     </div>
-                    <h4 class="service__title pt-2" >Green Chilli</h4>
+                    <h4 class="service__title pt-2" >Green Chilli <i class="icon-arrow-right"></i></h4>
                   </div>
                 </div>
               </a>
@@ -233,7 +238,7 @@ body {
                     <div class="contact__panel-icon1">
                       <img height="204px" src="assets/images/products/raw.png" alt="Raw Bananas">
                     </div>
-                    <h4 class="service__title pt-2">Raw Bananas</h4>
+                    <h4 class="service__title pt-2">Raw Bananas <i class="icon-arrow-right"></i></h4>
                   </div>
                 </div>
               </a>
@@ -245,7 +250,7 @@ body {
                     <div class="contact__panel-icon1">
                       <img height="204px" src="assets/images/products/raw.png" alt="Raw Bananas">
                     </div>
-                    <h4 class="service__title pt-2">Raw Bananas</h4>
+                    <h4 class="service__title pt-2">Raw Bananas <i class="icon-arrow-right"></i></h4>
                   </div>
                 </div>
               </a>
@@ -257,7 +262,7 @@ body {
                     <div class="contact__panel-icon1">
                       <img height="204px" src="assets/images/products/raw.png" alt="Raw Bananas">
                     </div>
-                    <h4 class="service__title pt-2">Raw Bananas</h4>
+                    <h4 class="service__title pt-2">Raw Bananas <i class="icon-arrow-right"></i></h4>
                   </div>
                 </div>
               </a>
@@ -271,7 +276,7 @@ body {
                     <div class="contact__panel-icon1">
                       <img height="204px" src="assets/images/products/chilli.png" alt="Dehydrated Chilli">
                     </div>
-                    <h4 class="service__title pt-2" >Dehydrated Chilli</h4>
+                    <h4 class="service__title pt-2" >Dehydrated Chilli <i class="icon-arrow-right"></i></h4>
                   </div>
                 </div>
               </a>
@@ -284,7 +289,7 @@ body {
                     <div class="contact__panel-icon1">
                       <img height="204px" src="assets/images/products/tomatos.png" alt="Dehydrated Tomatos">
                     </div>
-                    <h4 class="service__title pt-2" >Dehydrated Tomatos</h4>
+                    <h4 class="service__title pt-2" >Dehydrated Tomatos <i class="icon-arrow-right"></i></h4>
                   </div>
                 </div>
               </a>
@@ -292,6 +297,9 @@ body {
         
             <!-- Add more product panels as needed -->
           </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 offset-lg-4">
+            <button type="submit" class="btn btn__secondary btn__hover3 btn__block">View All</button>
+          </div><!-- /.col-lg-12 -->
         </div>
       </div>
     </section>
